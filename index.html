@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Booksky</h1>
+
+    </div>
+    <div class="container">
+      <div class="book-contianer">
+        <h2>Rich Dad Poor Dad</h2>
+        <h5>Robert</h5>
+        <p>The book is based on Kiyosaki's personal experiences with his two fathers - his biological father (poor dad) and his best friend's father (rich dad). The book provides a guide to financial literacy and teaches readers about the importance of financial education, creating wealth, and achieving financial freedom.</p>
+        <button onclick="deletebook(event)">Delete</button>
+      </div>
+    </div>
+    <div class="overlay">
+        <div class="popupbox">
+            <h2>Add book </h2>
+            <form >
+                <input type="text" placeholder="Book Tittke" id="booktittle">
+                <input type="text" placeholder="Author Name" id="authorname">
+                <textarea placeholder="Short Notes" id="shortnotes"></textarea>
+                <button id="addbtn">ADD</button>
+                <button id="cancelbtn">CANCEL</button>
+            </form>
+        </div>
+    </div>
+    <button class="addbutton" id="addpopup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
